@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47059D1E1ED8131700EC1180 /* GithubService.m in Sources */ = {isa = PBXBuildFile; fileRef = 47059D1D1ED8131700EC1180 /* GithubService.m */; };
 		4737F2C61ED6AFCC00810B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737F2C51ED6AFCC00810B0B /* main.m */; };
-		4737F2DF1ED6AFCC00810B0B /* SearchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737F2DE1ED6AFCC00810B0B /* SearchDemoTests.m */; };
 		4737F2EC1ED6B12C00810B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4737F2EB1ED6B12C00810B0B /* Assets.xcassets */; };
 		4737F2F31ED6B33800810B0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737F2F11ED6B33800810B0B /* AppDelegate.m */; };
 /* End PBXBuildFile section */
@@ -24,12 +24,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47059D1C1ED8131700EC1180 /* GithubService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubService.h; sourceTree = "<group>"; };
+		47059D1D1ED8131700EC1180 /* GithubService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubService.m; sourceTree = "<group>"; };
+		47059D201ED8142400EC1180 /* UserServiceInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceInterface.h; sourceTree = "<group>"; };
+		47059D241ED814F900EC1180 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4737F2C11ED6AFCC00810B0B /* SearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4737F2C51ED6AFCC00810B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4737F2D51ED6AFCC00810B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4737F2DA1ED6AFCC00810B0B /* SearchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4737F2DE1ED6AFCC00810B0B /* SearchDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchDemoTests.m; sourceTree = "<group>"; };
-		4737F2E01ED6AFCC00810B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4737F2EB1ED6B12C00810B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4737F2F11ED6B33800810B0B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4737F2F21ED6B33800810B0B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +55,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47059D181ED8126000EC1180 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				47059D191ED8126700EC1180 /* Layers */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		47059D191ED8126700EC1180 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				47059D1A1ED8127900EC1180 /* Network Layer */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		47059D1A1ED8127900EC1180 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				47059D201ED8142400EC1180 /* UserServiceInterface.h */,
+				47059D1B1ED8128E00EC1180 /* Github */,
+			);
+			name = "Network Layer";
+			path = "Network layer";
+			sourceTree = "<group>";
+		};
+		47059D1B1ED8128E00EC1180 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				47059D1C1ED8131700EC1180 /* GithubService.h */,
+				47059D1D1ED8131700EC1180 /* GithubService.m */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		47059D211ED814CA00EC1180 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47059D221ED814D500EC1180 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				47059D231ED814DC00EC1180 /* Supporting Files */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		47059D231ED814DC00EC1180 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47059D241ED814F900EC1180 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4737F2B81ED6AFCB00810B0B = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +134,7 @@
 		4737F2C31ED6AFCC00810B0B /* SearchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				47059D181ED8126000EC1180 /* Library */,
 				4737F2F41ED6B37800810B0B /* User stories */,
 				4737F2EF1ED6B2AA00810B0B /* Application */,
 				4737F2E91ED6B0CD00810B0B /* Resources */,
@@ -93,8 +154,8 @@
 		4737F2DD1ED6AFCC00810B0B /* SearchDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				4737F2DE1ED6AFCC00810B0B /* SearchDemoTests.m */,
-				4737F2E01ED6AFCC00810B0B /* Info.plist */,
+				47059D221ED814D500EC1180 /* Application */,
+				47059D211ED814CA00EC1180 /* Resources */,
 			);
 			path = SearchDemoTests;
 			sourceTree = "<group>";
@@ -267,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4737F2F31ED6B33800810B0B /* AppDelegate.m in Sources */,
+				47059D1E1ED8131700EC1180 /* GithubService.m in Sources */,
 				4737F2C61ED6AFCC00810B0B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4737F2DF1ED6AFCC00810B0B /* SearchDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +470,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SBH8C5W64D;
-				INFOPLIST_FILE = SearchDemoTests/Info.plist;
+				INFOPLIST_FILE = "SearchDemoTests/Application/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ksnegov.SearchDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +483,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SBH8C5W64D;
-				INFOPLIST_FILE = SearchDemoTests/Info.plist;
+				INFOPLIST_FILE = "SearchDemoTests/Application/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ksnegov.SearchDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,6 +510,7 @@
 				4737F2E51ED6AFCC00810B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4737F2E61ED6AFCC00810B0B /* Build configuration list for PBXNativeTarget "SearchDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +519,7 @@
 				4737F2E81ED6AFCC00810B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
