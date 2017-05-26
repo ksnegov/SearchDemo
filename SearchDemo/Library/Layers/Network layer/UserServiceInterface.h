@@ -7,6 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol UserServiceInterface <NSObject>
+@class User;
 
+@protocol UserServiceInterface <NSObject>
+/**
+ Search users
+
+ @param text search text
+ @param completionHandler completion hadnler return users or error
+ @return network request
+ */
+//- (id)searchUsersWithText:(NSString *)text completionHandler:(void(^)(NSArray <User *> *, NSError *error))completionHandler;
 @end

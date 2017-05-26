@@ -11,6 +11,9 @@
 		4737F2C61ED6AFCC00810B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737F2C51ED6AFCC00810B0B /* main.m */; };
 		4737F2EC1ED6B12C00810B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4737F2EB1ED6B12C00810B0B /* Assets.xcassets */; };
 		4737F2F31ED6B33800810B0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737F2F11ED6B33800810B0B /* AppDelegate.m */; };
+		47FC064F1ED816C500C22238 /* GithubServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FC064E1ED816C500C22238 /* GithubServiceTests.m */; };
+		47FC06561ED8187F00C22238 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FC06551ED8187F00C22238 /* User.m */; };
+		47FC06581ED8196200C22238 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FC06571ED8196200C22238 /* UserTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 		4737F2EB1ED6B12C00810B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4737F2F11ED6B33800810B0B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4737F2F21ED6B33800810B0B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47FC064E1ED816C500C22238 /* GithubServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubServiceTests.m; sourceTree = "<group>"; };
+		47FC06541ED8187F00C22238 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		47FC06551ED8187F00C22238 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		47FC06571ED8196200C22238 /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +141,7 @@
 		4737F2C31ED6AFCC00810B0B /* SearchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				47FC06501ED817F100C22238 /* Models */,
 				47059D181ED8126000EC1180 /* Library */,
 				4737F2F41ED6B37800810B0B /* User stories */,
 				4737F2EF1ED6B2AA00810B0B /* Application */,
@@ -154,6 +162,8 @@
 		4737F2DD1ED6AFCC00810B0B /* SearchDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				47FC06521ED8184900C22238 /* Models */,
+				47FC064A1ED8161B00C22238 /* Library */,
 				47059D221ED814D500EC1180 /* Application */,
 				47059D211ED814CA00EC1180 /* Resources */,
 			);
@@ -223,6 +233,71 @@
 			children = (
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		47FC064A1ED8161B00C22238 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				47FC064B1ED8162500C22238 /* Layers */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		47FC064B1ED8162500C22238 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				47FC064C1ED8162E00C22238 /* Network Layer */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		47FC064C1ED8162E00C22238 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				47FC064D1ED8163700C22238 /* Github */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		47FC064D1ED8163700C22238 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				47FC064E1ED816C500C22238 /* GithubServiceTests.m */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		47FC06501ED817F100C22238 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47FC06511ED817FB00C22238 /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47FC06511ED817FB00C22238 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				47FC06541ED8187F00C22238 /* User.h */,
+				47FC06551ED8187F00C22238 /* User.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		47FC06521ED8184900C22238 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47FC06531ED8185200C22238 /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47FC06531ED8185200C22238 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				47FC06571ED8196200C22238 /* UserTests.m */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FC06561ED8187F00C22238 /* User.m in Sources */,
 				4737F2F31ED6B33800810B0B /* AppDelegate.m in Sources */,
 				47059D1E1ED8131700EC1180 /* GithubService.m in Sources */,
 				4737F2C61ED6AFCC00810B0B /* main.m in Sources */,
@@ -337,6 +413,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FC06581ED8196200C22238 /* UserTests.m in Sources */,
+				47FC064F1ED816C500C22238 /* GithubServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
